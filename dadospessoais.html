@@ -40,70 +40,88 @@
     </ul>
 
     <div class="container">
-        <div class="form-group text-area">
+        <form action="" class="form">
+            <div class="form-group text-area">
 
-            <label>Nome do profissional:</label>
-            <div class="input">
-                <input type="text" class="form-control" id="g3" placeholder="">
-            </div>
-            
-
-            <div class="subtitle">Dados pessoais</div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <label for="">Cargo/funcão :</label>
-                </div>
-                <div class="col-sm">
+                <label>Nome do profissional:</label>
+                <div class="input">
                     <input type="text" class="form-control" id="g3" placeholder="">
-
                 </div>
+
+
+                <div class="subtitle">Dados pessoais</div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="">Cargo/funcão :</label>
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="g3" placeholder="">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="">Equipe : </label>
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="g3" placeholder="">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="">Cidade : </label>
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="g3" placeholder="">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="">Cpf : </label>
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" maxlength="11"
+                        onkeypress="$(this).mask('000.000.000-00');"
+                        class="form-control" id="cpf" name="cpf"
+                        onkeyup="validarCpf()" placeholder="">
+
+                        <div role="alert" id="mensagemCpf">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="">Data avaliação</label>
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" id="g3" placeholder="">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="">Responsável :</label>
+                        <input type="text" class="form-control" id="g3" placeholder="">
+
+                    </div>
+                    <div class="col-sm">
+                        <label for="">Data feedback :</label>
+                        <input type="date" class="form-control" id="g3" placeholder="">
+                    </div>
+                </div>
+
+                <label for="textarea2">Observações Gerais :</label>
+                <textarea class="form-control" id="textarea2" rows="3"></textarea>
+
             </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <label for="">Equipe : </label>
-                </div>
-                <div class="col-sm">
-                    <input type="text" class="form-control" id="g3" placeholder="">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label for="">Cidade : </label>
-                </div>
-                <div class="col-sm">
-                    <input type="text" class="form-control" id="g3" placeholder="">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <label for="">Data avaliação</label>
-                </div>
-                <div class="col-sm">
-                    <input type="text" class="form-control" id="g3" placeholder="">
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <label for="">Responsável :</label>
-                    <input type="text" class="form-control" id="g3" placeholder="">
-
-                </div>
-                <div class="col-sm">
-                    <label for="">Data feedback :</label>
-                    <input type="date" class="form-control" id="g3" placeholder="">
-                </div>
-            </div>
-
-            <label for="textarea2">Observações Gerais :</label>
-            <textarea class="form-control" id="textarea2" rows="3"></textarea>
-
-        </div>
+        </form>
 
     </div>
 
@@ -118,6 +136,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <script src="../POS_EXERCICIO/JS/dadospessoais.js"></script>
 </body>
 
 </html>

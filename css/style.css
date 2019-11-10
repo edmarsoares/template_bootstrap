@@ -1,0 +1,38 @@
+.container {
+    padding: 30px;
+    /* background-color: rgb(228, 233, 240); */
+    box-shadow: 0.5 black;
+    margin-top: 20px;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(32, 3, 59);
+    padding: 10px;
+}
+
+header {
+    font-size: 30px;
+    color: blue;
+    
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.col-sm:hover {
+    color: blue;
+}
+
+body{
+    background-color: beige
+}
